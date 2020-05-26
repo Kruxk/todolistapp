@@ -11,7 +11,7 @@ module.exports = {
       TodoItemId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "TagIds",
+          model: "TodoItems",
           key: "id",
         },
         onUpdate: "CASCADE",
@@ -20,7 +20,7 @@ module.exports = {
       TagId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "TagIds",
+          model: "Tags",
           key: "id",
         },
         onUpdate: "CASCADE",
